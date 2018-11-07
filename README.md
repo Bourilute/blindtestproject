@@ -1,6 +1,6 @@
 # Projet - Blind Test Musical
 
-Bienvenue sur la page de notre projet GitHub. 
+<strong>Bienvenue sur la page de notre projet GitHub. </strong>
 
 Nous sommes: Fabien Essid, Martin Lesueur, Grégoire Protas et Damien Jobard Siejak.
 
