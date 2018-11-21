@@ -1,0 +1,184 @@
+@import 'fonts';
+@import 'colors';
+
+html, body, main, header, footer, section, div
+{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+main
+{
+	display: flex;
+
+	height: 100vh;
+	width: 100vw;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: @color-purple-clear;
+}
+
+main.index
+{
+	flex-direction: column;
+
+	//Background animation
+	animation: color-change-2x 4s linear infinite alternate both;
+}
+
+main.quizz
+{
+	flex-direction: column;
+	justify-content: space-between;
+
+	section
+	{
+		width: 50vw;
+		height: 50vw;
+	}
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding: 0 1vw;
+
+	h1
+	{
+		font-family: @font-title;
+		font-size: @font-size-title-medium;
+		text-transform: uppercase;
+	}
+
+	a
+	{
+		display: block;
+
+		color: @color-title;
+		font-family: @font-button;
+		text-decoration: none;
+	}
+}
+
+.accueil
+{
+	margin-bottom: 5%;
+
+	h1
+	{
+		color: @color-title;
+
+		padding-bottom: 30px;
+
+		font-family: @font-title;
+		text-transform: uppercase;
+		text-align: center;
+
+		font-size: @font-size-title-large;
+
+		border-bottom: 5px solid @color-title;
+	}
+
+	.jouer
+	{
+		display: flex;
+
+		background-color: @color-purple-very-dark;
+
+		justify-content: center;
+
+		margin: 0 auto;
+		width: 50%;
+
+		border-radius: 50px;
+
+		a
+		{
+			display: block;
+
+			background-color: transparent;
+			color: @color-button;
+
+			font-family: @font-button;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align :center;
+			
+			font-size: @font-size-button;
+
+			border: 0px solid transparent;
+			
+			width: 100%;
+			padding: 0.3em;
+		}
+	}
+}
+
+footer
+{
+	color: @color-button;
+
+	font-family: @font-button;
+	text-transform: uppercase;
+
+	a
+	{
+		color: @color-button;
+		text-decoration: none;
+	}
+}
+
+.question
+{
+	text-align: center;
+	font-family: @font-text-bold;
+	font-size: @font-size-text-large;
+	color: @color-text;
+}
+
+.reponses
+{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+
+	width: 80%;
+	height: 80%;
+
+	margin: 0 auto;
+
+	.choix
+	{
+		font-family: @font-text;
+		color: @color-text;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 15px;
+		height: 30%;
+		width: 40%;
+
+		text-align: center;
+
+		background-color: @color-purple-very-dark;
+
+		border-radius: 50px;
+	}
+}
+
+@keyframes color-change-2x
+{
+	0%   { background: @color-purple-clear; }
+    100% { background: @color-purple-dark; }
+}
