@@ -12,7 +12,7 @@
 	<main class="quizz">
 		<header>
 			<h1><a href="index.php">Blinquizz!</a></h1>
-			<a href="#"><img src="assets/images/avatar.jpg" alt="Mon compte" /></a>
+			<a href="#"><img src="assets/images/avatar.png" alt="Mon compte" class="avatar"></a>
 		</header>
 
 		<div class="player">
