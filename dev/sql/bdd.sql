@@ -52,7 +52,7 @@ CREATE TABLE leaderboard(
 	p_id  int  NOT NULL,
 	u_id  int  NOT NULL,
 	score int  NOT NULL DEFAULT 0,
-	temps DATE NOT NULL DEFAULT 0,
+	temps int  NOT NULL DEFAULT 999999999,
 	PRIMARY KEY (l_id),
 	FOREIGN KEY (p_id) REFERENCES playlists(p_id),
 	FOREIGN KEY (u_id) REFERENCES utilisateurs(u_id)
