@@ -15,6 +15,7 @@
 		</header>
 
 		<section>
+			<div id= "bloc-audio"><audio></audio></div>
 			<p class="question">Question : Trouvez la bonne réponse</p>
 
 			<div class="reponses">
@@ -29,5 +30,7 @@
 			<p>Mentions légales</p>
 		</footer>
 	</main>
+
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
