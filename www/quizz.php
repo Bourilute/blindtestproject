@@ -6,6 +6,7 @@
 	<title>Quiz</title>
 
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 	<main class="quizz">
@@ -14,9 +15,18 @@
 			<a href="#"><img src="assets/images/avatar.jpg" alt="Mon compte" /></a>
 		</header>
 
+		<div class="player">
+			<div id="bloc-audio"></div>
+
+			   <i class="fas fa-volume-up fa-4x"></i>
+			    
+			<div>
+				<progress id="seekbar" value="0" max="1"></progress>
+			</div>
+		</div>
+
 		<section>
-			<div id= "bloc-audio"><audio></audio></div>
-			<p class="question">Question : Trouvez la bonne réponse</p>
+			<p id="question">Question : Trouvez la bonne réponse</p>
 
 			<div class="reponses">
 				<div id="1" class="choix"><p>Réponse 1</p></div>
@@ -30,7 +40,6 @@
 			<p>Mentions légales</p>
 		</footer>
 	</main>
-
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
