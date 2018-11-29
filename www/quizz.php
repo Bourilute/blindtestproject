@@ -15,7 +15,7 @@
 			<a href="#"><img src="assets/images/avatar.png" alt="Mon compte" class="avatar"></a>
 		</header>
 
-		<div class="player">
+		<div id="player" class="player">
 			<div id="bloc-audio"></div>
 
 			<i class="fas fa-volume-up fa-4x"></i>
@@ -25,13 +25,13 @@
 		</div>
 
 		<section>
-			<p id="question" class="question">Question : Trouvez la bonne réponse</p>
+			<p id="question" class="question">Prêt?</p>
 
 			<div class="reponses">
-				<div id="1" class="choix"><p>Réponse 1</p></div>
-				<div id="2" class="choix"><p>Réponse 1</p></div>
-				<div id="3" class="choix"><p>Réponse 1</p></div>
-				<div id="4" class="choix"><p>Réponse 1</p></div>
+				<div id="1" class="choix"><p> </p></div>
+				<div id="2" class="choix"><p> </p></div>
+				<div id="3" class="choix"><p> </p></div>
+				<div id="4" class="choix"><p> </p></div>
 			</div>
 		</section>
 

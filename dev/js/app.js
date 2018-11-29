@@ -1,25 +1,60 @@
 // Initialisation
 var indiceCourantQuestions = 0;
 
+
+// Questions, reponses et musiques de la playlist
 var questions = [ 'Question 1', 'Question 2' ];
 var reponses  = [ ['Réponse 1.A', 'Réponse 1.B', 'Réponse 1.C', 'Réponse 1.D' ],
                   ['Réponse 2.A', 'Réponse 2.B', 'Réponse 2.C', 'Réponse 2.D' ] ];
 var musiques  = ['assets/music/botw.mp3', 'assets/music/bd.mp3'];
 
+// Blocs HTML a modifier tout au long du jeu
 var questionElement  = document.getElementById        ( 'question'  );
 var choixElements    = document.getElementsByClassName( 'choix'     );
+var playerAudio      = document.getElementById        ( 'player'    );
 var blocAudioElement = document.getElementById        ( 'bloc-audio');
 
-
-changementQuestion(); // On initialise la première question
+// Evenements
 window.addEventListener( 'load', initEvents, false );
 
 function initEvents()
 {
+	playerAudio.style.display = "none";
+
 	for( var i = 0; i < choixElements.length; i++ )
 	{
+		choixElements[ i ].style.display = "none";
 		choixElements[ i ].addEventListener( 'click', changementQuestion, false );
 	}
+
+	decompte();
+}
+
+function decompte()
+{
+	// Decompte avant debut du jeu
+	var secondes = 5;
+	questionElement.innerHTML = secondes;
+
+	// Debut du decompte
+	var decompte = window.setInterval( function() 
+	{
+		questionElement.innerHTML = --secondes;
+	}, 1000 );
+
+	// A la fin du decompte on lance le jeu
+	window.setTimeout( function()
+	{
+
+		window.clearInterval( decompte );
+
+		playerAudio.style.display = "flex";
+
+		for( var i = 0; i < choixElements.length; i++ )
+			choixElements[ i ].style.display = "flex";
+
+		changementQuestion()
+	}, secondes * 1000 );
 }
 
 // Quand le joueur clique sur une reponse, cette fonction est appelee
