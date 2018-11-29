@@ -1,0 +1,67 @@
+html, body, main, header, footer, section, div
+{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+main
+{
+	display: flex;
+
+	min-height: 100vh;
+	width: 100vw;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: @color-purple-clear;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding: 0 1vw;
+
+	h1
+	{
+		font-family: @font-title;
+		font-size: @font-size-title-medium;
+		text-transform: uppercase;
+	}
+
+	a
+	{
+		display: block;
+
+		color: @color-title;
+		font-family: @font-button;
+		text-decoration: none;
+	}
+
+	.avatar
+	{
+		object-fit: contain;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+footer
+{
+	color: @color-button;
+
+	font-family: @font-button;
+	text-transform: uppercase;
+
+	a
+	{
+		color: @color-button;
+		text-decoration: none;
+	}
+}

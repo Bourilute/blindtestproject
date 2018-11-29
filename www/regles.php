@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Règles du jeu</title>
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  

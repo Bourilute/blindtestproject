@@ -1,0 +1,67 @@
+main.index
+{
+	flex-direction: column;
+
+	//Background animation
+	animation: color-change-2x 4s linear infinite alternate both;
+
+	.accueil
+	{
+		margin-bottom: 5%;
+
+		h1
+		{
+			color: @color-title;
+
+			padding-bottom: 30px;
+
+			font-family: @font-title;
+			text-transform: uppercase;
+			text-align: center;
+
+			font-size: @font-size-title-large;
+
+			border-bottom: 5px solid @color-title;
+		}
+
+		.jouer
+		{
+			display: flex;
+
+			background-color: @color-purple-very-dark;
+
+			justify-content: center;
+
+			margin: 0 auto;
+			width: 50%;
+
+			border-radius: 50px;
+
+			a
+			{
+				display: block;
+
+				background-color: transparent;
+				color: @color-button;
+
+				font-family: @font-button;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align :center;
+				
+				font-size: @font-size-button;
+
+				border: 0px solid transparent;
+				
+				width: 100%;
+				padding: 0.3em;
+			}
+		}
+	}
+}
+
+@keyframes color-change-2x
+{
+	0%   { background: @color-purple-clear; }
+    100% { background: @color-purple-dark; }
+}

@@ -22,6 +22,9 @@ function initEvents()
 	}
 }
 
+// Quand le joueur clique sur une reponse, cette fonction est appelee
+// Elle actualise la musique, la question et les reponses
+// Quand la derniere question a ete repondue, elle met fin au jeu
 function changementQuestion()
 {
 	console.log( "indiceCourantQuestions : " + indiceCourantQuestions );
