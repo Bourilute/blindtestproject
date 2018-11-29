@@ -18,8 +18,7 @@
 		<div class="player">
 			<div id="bloc-audio"></div>
 
-			   <i class="fas fa-volume-up fa-4x"></i>
-			    
+			<i class="fas fa-volume-up fa-4x"></i>
 			<div>
 				<progress id="seekbar" value="0" max="1"></progress>
 			</div>

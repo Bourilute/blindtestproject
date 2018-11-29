@@ -1,19 +1,14 @@
-//@prepros-prepend vendor/jquery/jquery-3.3.1.min.js
-
-
 // Initialisation
 var indiceCourantQuestions = 0;
 
 var questions = [ 'Question 1', 'Question 2' ];
 var reponses  = [ ['Réponse 1.A', 'Réponse 1.B', 'Réponse 1.C', 'Réponse 1.D' ],
                   ['Réponse 2.A', 'Réponse 2.B', 'Réponse 2.C', 'Réponse 2.D' ] ];
-var musiques = ['assets/music/botw.mp3', 'assets/music/bd.mp3'];
+var musiques  = ['assets/music/botw.mp3', 'assets/music/bd.mp3'];
 
-var questionElement = document.getElementById        ( 'question'  );
-var choixElements   = document.getElementsByClassName( 'choix'     );
-var questionMusic   = document.getElementById        ( 'music'     );
-var blocAudio       = document.getElementById        ( 'bloc-audio');
-//var blocControles   = document.
+var questionElement  = document.getElementById        ( 'question'  );
+var choixElements    = document.getElementsByClassName( 'choix'     );
+var blocAudioElement = document.getElementById        ( 'bloc-audio');
 
 
 changementQuestion(); // On initialise la première question
@@ -29,23 +24,26 @@ function initEvents()
 
 function changementQuestion()
 {
+	console.log( "indiceCourantQuestions : " + indiceCourantQuestions );
+	// S'il y a encore des questions
 	if( questions.length > indiceCourantQuestions )
 	{
-	    var lecteurAudio =   '<audio id="test" src="' + musiques[ indiceCourantQuestions ] + '" autoplay></audio>';
-/*
-	  	var controlleurAudio =   '<a class="controls" id="play-button" style="cursor:pointer;"><i class="fas fa-pause fa-2x"></i></a>'
-	  	                       + '<a class="controls" id="stop-button" style="cursor:pointer;"><i class="fas fa-stop fa-2x"></i></a>'
-                               + '<a class="controls" id="pause-button" style="cursor:pointer;"><i class="fas fa-play fa-2x"></i></a>';
-*/
-	    blocAudio.innerHTML = lecteurAudio;
+		// On cree notre lecteur audio pour actualiser la musique
+	    var lecteurAudio =   '<audio id="lecteur-audio" src="' + musiques[ indiceCourantQuestions ] + '" autoplay></audio>';
 
-	    var ply = document.getElementById('test');
-		var dur = document.getElementById('test').duration;
+	    blocAudioElement.innerHTML = lecteurAudio;
 
-		$('#test').on('timeupdate', function() {
-	    	$('#seekbar').attr("value", this.currentTime / this.duration);
+	    // On recupere le bloc audio precedemment cree
+	    var ply = document.getElementById('lecteur-audio');
+		var dur = document.getElementById('lecteur-audio').duration;
+
+		// Quand la musique progresse, on remplit la progress bar
+		ply.addEventListener( 'timeupdate', function()
+		{
+			document.getElementById( 'seekbar' ).setAttribute( "value", this.currentTime / this.duration );
 		});
 
+		// Actualisation de la question et des reponses
 		questionElement.innerHTML = questions[ indiceCourantQuestions ];
 
 		for( var i = 0; i < choixElements.length; i++ )
@@ -55,7 +53,8 @@ function changementQuestion()
 	}
 	else
 	{
-    	questionMusic.innerHTML = '';
+		// Plus de question? Alors on affiche un message de fin
+    	blocAudioElement.innerHTML = "";
 		questionElement.innerHTML = 'Terminé !';
 
 		for( var i = 0; i < choixElements.length; i++ )
