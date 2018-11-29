@@ -1,21 +1,78 @@
-.text
+main.regle
 {
-	color:black;
-	text-align: justify;
+	background-color: @color-purple-dark;
 
-	width:90%;
+	.text
+	{
+		text-align: justify;
+		width: 75vw;
 
-	margin:auto;
-	margin-top: 5%;
-	padding:20px;
+		h1
+		{
+			color: @color-title;
 
-	border-radius: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	background-color:#fcd6d9;
-}
+			font-family: @font-title;
+			text-transform: uppercase;
+			text-align: center;
 
-.text h1
-{
-	font-size:2em;
-	text-transform: uppercase;
+			font-size: @font-size-title-large;
+
+			span
+			{
+				border-bottom: 5px solid @color-title;
+			}
+		}
+
+		h2
+		{
+			color: @color-title;
+
+			font-family: @font-title;
+			font-size: @font-size-title-small;
+
+			text-transform: uppercase;
+		}
+
+		p
+		{
+			color: @color-text;
+			font-family: @font-text;
+
+			margin-left: 5em;
+		}
+
+		.retour
+		{
+			display: flex;
+
+			background-color: @color-purple-very-dark;
+
+			justify-content: center;
+
+			margin: 0 auto;
+			width: max-content;
+
+			border-radius: 50px;
+
+			a
+			{
+				display: block;
+
+				background-color: transparent;
+				color: @color-button;
+
+				font-family: @font-button;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align :center;
+				
+				font-size: @font-size-button;
+
+				border: 0px solid transparent;
+				
+				width: 100%;
+				padding: 0.3em 1.5em;
+			}
+		}
+	}
 }
