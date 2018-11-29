@@ -25,7 +25,7 @@
 		</div>
 
 		<section>
-			<p id="question">Question : Trouvez la bonne réponse</p>
+			<p id="question" class="question">Question : Trouvez la bonne réponse</p>
 
 			<div class="reponses">
 				<div id="1" class="choix"><p>Réponse 1</p></div>
