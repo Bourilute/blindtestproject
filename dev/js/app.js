@@ -115,7 +115,7 @@ function actualiserScore( event )
 		var indice = 0;
 		for( var i = 0; i < reponses[ indiceCourantQuestions-1 ].length; i++ )
 		{
-			if( reponses[ indiceCourantQuestions-1 ][ i ] == event.explicitOriginalTarget.data )
+			if( reponses[ indiceCourantQuestions-1 ][ i ] == event.srcElement.innerText )
 				indice = i; console.log( "trouvé !" );
 		}
 
