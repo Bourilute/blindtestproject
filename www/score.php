@@ -37,7 +37,7 @@
 <body>
 	<main class="leader">
 		<header>
-			<h1><a href="index.php">Blinquizz!</a></h1>
+			<h1><a href="index.php">Blinquizz - Leaderboard</a></h1>
 			<a href="#"><img src="assets/images/avatar.png" alt="Mon compte" class="avatar"></a>
 		</header>
 

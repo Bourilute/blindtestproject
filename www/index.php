@@ -17,7 +17,7 @@
 			</div>
 		</section>
 		<footer>
-			<a href="#">Compte</a> - <a href="regles.php">Règles du jeu</a>
+			<a href="compte.php">Compte</a> - <a href="regles.php">Règles du jeu</a>
 		</footer>
 	</main>
 </body>
