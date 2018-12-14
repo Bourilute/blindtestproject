@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Accueil - BlindQuizz</title>
+	<title>BlindQuizz - Compte</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
@@ -13,7 +13,9 @@
 			<div class="jouer">
 				<a href="co_user.php">Connexion</a>
 			</div>
-			
+
+			<br/>
+
 			<div class="jouer">
 				<a href="add_user.php">Création d'un compte</a>
 			</div>

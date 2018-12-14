@@ -21,30 +21,33 @@ if (!empty($_POST)) {
 ?>
 <!DOCTYPE HTML>
 <html>
-<head>
-        <title>Bindquizz - Création d'un compte</title>
-        <meta charset="utf-8">
-</head>
-<body>
-<br>
-<br>
-<fieldset>
-	<legend>Formulaire d'ajout</legend>
-	<form method="post">
-		<input type="hidden" name="id" value="" />
-		<p>
-			Login : <input type="text" name="login" value="" />
-		</p>
-		<p>
-			Adresse Mail : <input type="text" name="mail" value="" />
-		</p>
-		<p>
-			MDP : <input type="text" name="mdp" value="" />
-		</p>
-		<p>
-			<input type="submit" value="Ajouter" />
-		</p>
-	</form>
-</fieldset>		 
-</body>
+	<head>
+		<title>Bindquizz - Création d'un compte</title>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	    <style>
+			main{
+				color: white;
+				font-family:"Montserrat Regular";
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="index">
+			<form method="post">
+				<input type="hidden" name="id" value="" />
+				<p>Login : <input type="text" name="login" value="" /></p>
+
+				<p>Adresse Mail : <input type="text" name="mail" value="" /></p>
+
+				<p>MDP : <input type="text" name="mdp" value="" /></p>
+
+				<div>
+					<input type="submit" value="Ajouter" />
+				</div>
+			</form>
+		</main>		 
+	</body>
 </html>
