@@ -3,12 +3,18 @@ var indiceCourantQuestions = 0;
 var totalPoints            = 0;
 
 // Questions, reponses et musiques de la playlist
-var questions = [ 'Question 1', 'Question 2' ];
-var reponses  = [ ['Réponse 1.A', 'Réponse 1.B', 'Réponse 1.C', 'Réponse 1.D' ],
-                  ['Réponse 2.A', 'Réponse 2.B', 'Réponse 2.C', 'Réponse 2.D' ] ];
-var score     = [ [1            , 0            , 0            , 0             ],
-                  [0            , 0            , 1            , 0             ] ];
-var musiques  = ['assets/music/botw.mp3', 'assets/music/bd.mp3'];
+var questions = [ 'En quelle année est sortie cette chanson?', 'Quel est le nom de cette chanson sortie en 2015?','Qui est le chanteur de cette chanson sortie en 1978?', 'Quel est le groupe qui a chanté cette chanson sortie en 1977?', 'Quel est le nom de cette chanson sortie en 2011?' ];
+var reponses  = [ ['2015', '2008', '2013', '2017' ],
+                  ['Wiz Khalifa', 'See you again', 'Fast and Furious 7 song', 'See me again' ],
+                  ['Jacques Brel', 'Patrick Bruel', 'Michel Berger', 'Daniel Balavoine' ],
+                  ['Queen', 'Christine and the Queen', 'Freddie Mercury', 'The Beatles' ],
+                  ['Le chant des sirènes', 'Suicide social', 'La fête est finie', 'Raelsan' ] ];
+var score     = [ [0            , 0            , 1            , 0             ],
+                  [0            , 1            , 0            , 0             ],
+                  [0            , 0            , 0            , 1             ],
+                  [1            , 0            , 0            , 0             ],
+                  [0            , 1            , 0            , 0             ] ];
+var musiques  = ['assets/music/bella.mp3', 'assets/music/seeyouagain.mp3', 'assets/music/lechanteur.mp3', 'assets/music/wewillrockyou.mp3', 'assets/music/suicidesocial.mp3'];
 
 // Blocs HTML a modifier tout au long du jeu
 var questionElement  = document.getElementById        ( 'question'  );

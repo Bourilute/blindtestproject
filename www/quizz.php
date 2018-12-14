@@ -36,7 +36,7 @@
 		</section>
 
 		<footer>
-			<p>Mentions légales</p>
+			<a href="mention.html"><p>Mentions légales</p></a>
 		</footer>
 	</main>
 	<script type="text/javascript" src="js/app.js"></script>
