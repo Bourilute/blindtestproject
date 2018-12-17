@@ -23,7 +23,7 @@
 		<p>Les règles du jeu sont simples, tout le monde peut jouer!
 		</br>
 		Une fois la partie débutée, vous serez confronté à des questions portant sur la culture musicale. Un extrait de musique débutera et une question y sera associée, à vous de choisir la bonne réponse parmi les quatre choix proposés. Le questionnaire sera composé de trois catégories de questions: trouver l’auteur, trouver le nom de la chanson et enfin trouver la date de sortie de la chanson. Une fois votre réponse choisie, une autre question vous sera proposée et ainsi de suite.</br>
-		Pour vous aider dans votre quête vous pourrez agir sur la musique en faisant soit pause soit en la faisant redémarrer. Faites attention, vous n’avez la possibilité de ne faire qu’un choix par question et la correction ne vous sera pas donnée! Au fur et à mesure de vos bonnes réponses, vous gagnerez des points qui amélioreront votre score qui vous sera attribué à la fin du questionnaire. 
+		 Faites attention, vous n’avez la possibilité de ne faire qu’un choix par question et la correction ne vous sera pas donnée! Au fur et à mesure de vos bonnes réponses, vous gagnerez des points qui amélioreront votre score qui vous sera attribué à la fin du questionnaire. 
 		</p>
 
 		<div class="retour">
